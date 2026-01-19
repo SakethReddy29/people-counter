@@ -1,40 +1,81 @@
+/* Reset basic spacing */
+* {
+    box-sizing: border-box;
+}
+
+/* Page background */
 body {
-    background-image: url(black);
-    background-size: cover;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 320px;
     text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
+/* Title */
 h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 50px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
 }
 
+/* Counter number */
+h2 {
+    font-size: 56px;
+    margin: 10px 0 25px;
+    color: #1d2671;
+}
+
+/* Buttons common style */
 button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
+    border-radius: 8px;
+    font-size: 15px;
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.1s ease;
 }
 
+/* Hover effect */
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Button colors */
 #increment-btn {
-    background: darkred;
+    background-color: #e63946;
 }
 
 #save-btn {
-    background: darkgreen;
+    background-color: #2a9d8f;
 }
+
+/* Saved entries text */
+#save-el {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+
 
 
 
